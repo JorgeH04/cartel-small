@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Numero mayor de un arreglo</title>
+
+
+
+</head>
+<body bgcolor="#008000">
+
+<script>
+var hay_negativos = false;
+var lista = new Array;
+for(var i=1;i<=5;i++){
+lista[i]=parseInt(prompt("Introduzca un numero"));
+}
+
+lista.forEach(function(element){
+
+if(element < 0){
+  hay_negativos = true;
+}
+});
+
+if(hay_negativos == true){
+  document.write("<br>si")
+}else{
+  document.write( "<br>no")
+}
+
+
+
+
+</script>
+
+
+
+
+    
+      
+</body>
+
+    
+</html>
